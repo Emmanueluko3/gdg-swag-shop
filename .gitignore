@@ -1,0 +1,65 @@
+# BACKEND =========
+
+# compiled output
+/backend/.output
+/backend/dist
+/backend/node_modules
+
+# Logs
+/backend/logs
+/backend/*.log
+/backend/npm-debug.log*
+/backend/pnpm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
+lerna-debug.log*
+
+# OS
+/backend/.DS_Store
+
+# Tests
+/backend/coverage
+/backend/.nyc_output
+
+# IDEs and editors
+/backend/.idea
+/backend/.project
+/backend/.classpath
+/backend/.c9/
+/backend/*.launch
+/backend/.settings/
+/backend/*.sublime-workspace
+
+# IDE - VSCode
+/backend/.vscode/*
+/backend/!.vscode/settings.json
+/backend/!.vscode/tasks.json
+/backend/!.vscode/launch.json
+/backend/!.vscode/extensions.json
+
+# FRONTEND=========
+
+# Nuxt dev/build outputs
+/frontend/.output
+/frontend/.data
+/frontend/.nuxt
+/frontend/.nitro
+/frontend/.cache
+/frontend/dist
+
+# Node dependencies
+/frontend/node_modules
+
+# Logs
+/frontend/logs
+/frontend/*.log
+
+# Misc
+/frontend/.DS_Store
+/frontend/.fleet
+/frontend/.idea
+
+# Local env files
+/frontend/.env
+/frontend/.env.*
+/frontend/!.env.example
