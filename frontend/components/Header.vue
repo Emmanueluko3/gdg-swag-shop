@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-customWhite fixed w-full flex justify-between items-center py-6 px-20"
+    class="bg-customWhite fixed w-full flex justify-between items-center py-6 px-20 drop-shadow-md"
   >
     <a class="w-72" href="/">
       <img :src="navLogo" class="w-full h-full" alt="Logo" />

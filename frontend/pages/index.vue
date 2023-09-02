@@ -1,11 +1,74 @@
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
+const currentRoute = route.path;
+import HeroImage from "@/assets/images/HeroImage.svg";
+import Google from "@/assets/images/Google.svg";
+import Microsoft from "@/assets/images/Microsoft.svg";
+import Spotify from "@/assets/images/Spotify.svg";
+import Mailchimp from "@/assets/images/Mailchimp.svg";
+import Airbnb from "@/assets/images/Airbnb.svg";
+import Uber from "@/assets/images/Uber.svg";
+
+const sponsors = [
+  Google,
+  Microsoft,
+  Spotify,
+  Mailchimp,
+  Airbnb,
+  Uber,
+  Uber,
+  Uber,
+];
 </script>
 
 <template>
   <div>
-    <h1>Nuxt Routing set up successfully!</h1>
-    <p>Current route: {{ route.path }}</p>
-    <a href="https://nuxt.com/docs/getting-started/routing" target="_blank">Learn more about Nuxt Routing</a>
+    <Header />
+    <!-- Hero section -->
+    <div class="bg-customWhite px-20 py-28">
+      <div class="flex justify-between items-center">
+        <div class="w-[45%]">
+          <h2 class="text-5xl leading-normal">
+            Elevate Your Style with our Exclusive
+            <span class="font-bold">Tech-Inspired Merch!</span>
+          </h2>
+          <p class="py-6 text-lg">
+            Explore a curated collection of cutting-edge apparel and accessories
+            that fuse technology with fashion, designed to reflect your love for
+            innovation and community
+          </p>
+          <a
+            href="#shop"
+            class="bg-customBlue rounded-md py-3 px-6 text-white font-medium hover:opacity-80"
+          >
+            Shop now
+          </a>
+        </div>
+        <div class="w-[38]">
+          <img :src="HeroImage" class="w-full h-full" alt="Hero Image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsors -->
+    <div class="px-20 py-20 flex justify-between items-center">
+      <div class="w-[38%]">
+        <h3 class="text-4xl mb-4">
+          Meet our <span class="font-bold">Partners</span>
+        </h3>
+        <p class="text-base">
+          Introducing the incredible minds and collaborators who fuel our
+          journey and passion.
+        </p>
+      </div>
+      <div class="w-[58%] grid grid-cols-4 grid-flow-row gap-4">
+        <div v-for="(item, index) in sponsors" :key="index" class="h-9">
+          <img :src="item" class="w-full h-full" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Shops -->
+    <div class="px-20 py-20" id="shop"></div>
   </div>
 </template>

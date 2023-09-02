@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         customWhite: "#F8FAFB",
+        customBlue: "#2B82FB",
       },
     },
   },
