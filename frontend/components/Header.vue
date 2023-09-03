@@ -12,7 +12,7 @@
         :key="index"
         class="mx-6 hover:opacity-60"
         :href="item.href"
-        ><img :src="item.icon" alt=""
+        ><img :src="item.icon" alt="" class="w-6 h-6"
       /></a>
     </div>
   </nav>
@@ -44,3 +44,6 @@ export default {
   },
 };
 </script>
+
+<!-- const route = useRoute();
+const currentRoute = route.path; -->
