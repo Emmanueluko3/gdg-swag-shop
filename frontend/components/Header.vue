@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-customWhite fixed w-full flex justify-between items-center py-6 px-20"
+    class="bg-customWhite fixed w-full flex justify-between items-center py-6 px-20 drop-shadow-md"
   >
     <a class="w-72" href="/">
       <img :src="navLogo" class="w-full h-full" alt="Logo" />
@@ -12,7 +12,7 @@
         :key="index"
         class="mx-6 hover:opacity-60"
         :href="item.href"
-        ><img :src="item.icon" alt=""
+        ><img :src="item.icon" alt="" class="w-6 h-6"
       /></a>
     </div>
   </nav>
@@ -44,3 +44,6 @@ export default {
   },
 };
 </script>
+
+<!-- const route = useRoute();
+const currentRoute = route.path; -->
